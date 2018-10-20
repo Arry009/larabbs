@@ -162,7 +162,8 @@ return [
         Mews\Captcha\CaptchaServiceProvider::class,
         Intervention\Image\ImageServiceProviderLaravel5::class,
         Barryvdh\Debugbar\ServiceProvider::class,
-        Mews\Purifier\PurifierServiceProvider::class
+        Mews\Purifier\PurifierServiceProvider::class,
+        Laravel\Horizon\HorizonServiceProvider::class,
 
     ],
 
@@ -216,7 +217,8 @@ return [
         'Captcha' => Mews\Captcha\Facades\Captcha::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'LaravelDebugger' => Barryvdh\Debugbar\Facade::class,
-        'Purifier' => Mews\Purifier\Facades\Purifier::class
+        'Purifier' => Mews\Purifier\Facades\Purifier::class,
+        'Horizon' => Laravel\Horizon\Horizon::class
 
     ],
 
